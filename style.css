@@ -28,3 +28,8 @@
     box-shadow: inset 0px 0px 0px 1px red;
     box-sizing: border-box;
 }
+
+.tenth.tenth2 {
+    border-image: url("tenth.jpg");
+    visibility: hidden;
+}
