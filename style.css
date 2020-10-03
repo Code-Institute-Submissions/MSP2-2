@@ -8,8 +8,8 @@
 
 .card {
     display: inline-block;
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     background-image: url("img/tardis.webp");
     
     cursor: pointer;
@@ -29,7 +29,7 @@
     box-sizing: border-box;
 }
 
-.tenth.tenth2 {
-    border-image: url("tenth.jpg");
-    visibility: hidden;
+#tenth, #tenth2 {
+    background-image: url("tenth.jpg");
+    
 }
