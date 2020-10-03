@@ -1,35 +1,5 @@
-.row{
-    text-align: center;
-}
-
-.row.hidden {
-    display: none;
-}
-
-.card {
-    display: inline-block;
-    width: 200px;
-    height: 200px;
-    background-image: url("img/tardis.webp");
-    
-    cursor: pointer;
-}
-
-.card.done {
-    cursor: defualt;
-}
-
-.card.done:hover {
-    cursor: defualt;
-    box-shadow: none;
-}
-
-.card:hover {
-    box-shadow: inset 0px 0px 0px 1px red;
-    box-sizing: border-box;
-}
-
-#tenth, #tenth2 {
-    background-image: url("tenth.jpg");
-    
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
