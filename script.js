@@ -31,9 +31,9 @@ function checkForMatch() {
   isMatch ? disableCards() : unflipCards();
 }
 
-function disableCard() {
-  firstCard.removeEventListener('click', flipcard);
-  secondCard.removeEventListener('click', flipCard);
+function disableCards() {
+  firstCard.removeEventListener("click", flipCard);
+  secondCard.removeEventListener("click", flipCard);
 
   resetBoard();
 }
@@ -42,8 +42,8 @@ function unflipCards() {
   lockBoard = true;
 
   setTimeout(() => {
-    firstCard.classList.remove('flip');
-    secondCard.classList.remove('flip');
+    firstCard.classList.remove("flip");
+    secondCard.classList.remove("flip");
 
     resetBoard();
   }, 1500);
