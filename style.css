@@ -7,9 +7,18 @@
 body {
     height: 100vh;
     display: flex;
-    background: #060AB2;
+    background: rgb(0, 0, 0);
 }
 
+.scoreboard{
+    display: inline;
+    text-align: center;
+}
+
+.restart{
+     cursor: pointer;
+    color: rgb(17, 143, 0);
+}
 
 .memory-game {
     width: 640px;
@@ -18,7 +27,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     perspective: 1000px; 
-    
+    cursor: pointer;
 }
 
 .memory-card {
