@@ -10,6 +10,7 @@ body {
     background: #060AB2;
 }
 
+
 .memory-game {
     width: 640px;
     height: 640px;
@@ -28,6 +29,7 @@ body {
     transform: scale(1);
     transform-style: preserve-3d;
     transition: transform .5s;
+    
 }
 
 .memory-card:active {
