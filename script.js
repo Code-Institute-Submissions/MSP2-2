@@ -3,6 +3,7 @@ const cards = document.querySelectorAll('.memory-card');
 let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
+var restart;
 
 function flipCard() {
   if (lockBoard) return;
@@ -63,3 +64,7 @@ function resetBoard() {
   });
 })();
 cards.forEach((card) => card.addEventListener("click", flipCard));
+
+function restart() {
+    document.getElementsByClassName("restart").reset();
+}
