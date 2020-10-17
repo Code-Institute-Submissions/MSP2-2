@@ -52,12 +52,12 @@ transition: transform .2s;
 
 .front-face,
 .back-face {
-    width: 100%;
-    height: 100%;
+    width: 200%;
+    height: 200%;
     padding: 20px;
     position: absolute;
-    border-radius:20px;
-    background: #1c7ccc;
+    border-radius:10px;
+    background: #229100;
     backface-visibility: hidden;
 }
 
