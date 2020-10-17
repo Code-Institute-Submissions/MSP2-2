@@ -1,7 +1,7 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+   box-sizing: border-box;
 }
 
 body {
@@ -21,24 +21,25 @@ body {
 }
 
 .memory-game {
-    width: 640px;
-    height: 640px;
+    width: 740px;
+    height: 740px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
     perspective: 1000px; 
     cursor: pointer;
+    
 }
 
 .memory-card {
-    width: calc(25% - 10px);
-    height: calc(33.333% - 10px);
-    margin: 5px;
+    width: calc(25% - 25px);
+    height: calc(33.333% - 25px);
+    margin: auto;
     position: relative;
     transform: scale(1);
     transform-style: preserve-3d;
     transition: transform .5s;
-    
+   
 }
 
 .memory-card:active {
@@ -52,15 +53,24 @@ transition: transform .2s;
 
 .front-face,
 .back-face {
-    width: 200%;
-    height: 200%;
-    padding: 20px;
+    width: 110%;
+    height: 110%;
+    padding: 10px;
     position: absolute;
-    border-radius:10px;
+    border-radius:20px;
     background: #229100;
     backface-visibility: hidden;
 }
 
 .front-face {
     transform: rotateY(180deg); 
+}
+
+@media screen and (min-width: 375px) {
+   .memory-game {
+       column-count: 1;
+       height: 900px;
+       width: 900px;
+       
+   }
 }
