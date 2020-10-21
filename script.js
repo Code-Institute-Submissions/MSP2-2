@@ -66,7 +66,8 @@ function resetBoard() {
 cards.forEach((card) => card.addEventListener("click", flipCard));
 
 function reset() {
-  document.getElementsByClassName("reset").reset();
-
+  
+     location.reload();
+        return false;
 }  
 
