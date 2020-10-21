@@ -13,7 +13,14 @@ body {
 .scoreboard{
     display: inline;
     text-align: center;
+    
 }
+
+.moves {
+    font-size: 25px;
+    color: #229100;
+}
+
 
 
 .memory-game {
