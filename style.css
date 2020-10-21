@@ -15,10 +15,6 @@ body {
     text-align: center;
 }
 
-.restart{
-     cursor: pointer;
-    color: rgb(17, 143, 0);
-}
 
 .memory-game {
     width: 740px;
