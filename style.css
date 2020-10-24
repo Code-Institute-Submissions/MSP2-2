@@ -4,16 +4,26 @@
    box-sizing: border-box;
 }
 
-body {
-    height: 100vh;
-    display: flex;
-    background: rgb(0, 0, 0);
+h1 {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #229100;
+    display: inline;
+    /* padding: 10px; 
+    margin: auto; */
 }
 
-.scoreboard{
+h2 {
+    display: flex;
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+    
+}
+
+.scoreboard {
     display: inline;
     text-align: center;
-    
 }
 
 .moves {
@@ -21,7 +31,11 @@ body {
     color: #229100;
 }
 
-
+body {
+    height: 100vh;
+    display: flex;
+    background: rgb(0, 0, 0);
+}
 
 .memory-game {
     width: 740px;
