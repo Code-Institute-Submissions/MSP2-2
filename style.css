@@ -4,23 +4,7 @@
    box-sizing: border-box;
 }
 
-/*h1 {
-    color:  #229100;
-    text-align: center;
-    letter-spacing: 2px;
-    font-size: 50px;
-    text-transform: capitalize;
-    padding: 20px;
-}
 
-.scoreboard{
-    padding: 20px;
-    letter-spacing: 1px;
-    font-size: 30px;
-    text-transform: capitalize;
-    color:  #229100;
-     
-} */
 
 body {
     height: 100vh;
