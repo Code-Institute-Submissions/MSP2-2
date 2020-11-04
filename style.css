@@ -3,8 +3,12 @@
   margin: 0;
    box-sizing: border-box;
 }
-
-
+.h1 {
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #229100;
+}
 
 body {
     height: 100vh;
