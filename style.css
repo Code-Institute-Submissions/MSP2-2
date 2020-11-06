@@ -3,11 +3,17 @@
   margin: 0;
    box-sizing: border-box;
 }
-.h1 {
-    font-size: 25px;
+h1 {
+    font-size: 50px;
     font-weight: bold;
     text-transform: capitalize;
     color: #229100;
+    text-align: center;
+}
+
+h1 {
+    margin: 25px;
+
 }
 
 body {
