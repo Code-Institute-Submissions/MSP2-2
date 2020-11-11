@@ -71,3 +71,14 @@ function reset() {
         return false;
 }  
 
+function move18() {
+
+}
+
+function move16() {
+
+}
+
+function move14() {
+
+}
