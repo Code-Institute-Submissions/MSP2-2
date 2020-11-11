@@ -16,6 +16,36 @@ h1 {
 
 }
 
+.scoreboard {
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+.moves {
+    color: #229100;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 35px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+.buttons {
+    text-align: center;
+    font-size: 40px;
+}
+
+.button-1 {
+    padding: 10px;
+    letter-spacing: 2px;
+}
+
+.button-2 {
+    padding: 10px;
+    letter-spacing: 2px;
+}
+
 body {
     height: 100vh;
     display: flex;
