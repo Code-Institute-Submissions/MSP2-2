@@ -7,23 +7,28 @@
 	<title>Memory Game</title>
 	<link rel="stylesheet" href="./style.css" />
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
-	 integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous" />
+		integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous" />
 </head>
 
 
 <body>
-	<!-- <header class="title">  <h1>Aliens <br> Memory game</h1>  </header>
+	<header class="title">
+		<h1>Aliens <br> Memory game</h1>
+	
 
-		
-			<div class="scoreboard">
-				<div class="moves">Moves 0</div>
-				<input type="button" onclick="reset()" value="reset" >
-           </div> -->
-    
-		 
+
+	<div class="scoreboard">
+		<div class="moves" value="move16">Moves 16</div>
+		<input type="button" onclick="reset()" value="reset" >
+           </div>
+		<div class="buttons">
+			<a class="button-1" href="index.html">Alien</a>
+			<a class="button-2" href="hard.html">Alien 3</a>
+		</div>
+</header>
 
 		<section class="memory-game">
-        
+
 			<div class="memory-card" data-framework="hugger2">
 				<img class="front-face" src="img/hugger2.jpg" alt="" />
 				<img class="back-face" src="img/egg.png" alt="" />
