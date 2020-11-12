@@ -7,8 +7,8 @@ var restart;
 var moves = 18;
 
 function flipCard() {
-    move = move-1; 
-document.querySelector("div.moves").innerHTML("Move "+ move);
+    moves = moves-1; 
+document.querySelector("div.moves").innerHTML = "Moves "+ moves;
   if (lockBoard) return;
   if (this === firstCard) return;
 
