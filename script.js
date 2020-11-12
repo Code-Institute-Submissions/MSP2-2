@@ -4,8 +4,11 @@ let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
 var restart;
+var moves = 18;
 
 function flipCard() {
+    move = move-1; 
+document.querySelector("div.moves").innerHTML("Move "+ move);
   if (lockBoard) return;
   if (this === firstCard) return;
 
