@@ -31,6 +31,15 @@ h1 {
     padding-bottom: 15px;
 }
 
+p {
+    color: #36e700;
+    font-weight: bold;
+    font-size: 50px;
+    text-transform: capitalize;
+    text-align: center;
+    padding: 5px;
+}
+
 .buttons {
     text-align: center;
     font-size: 40px;
