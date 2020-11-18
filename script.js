@@ -1,4 +1,4 @@
-const cards = document.querySelectorAll('.memory-card');
+const cards = document.querySelectorAll(".memory-card");
 
 let hasFlippedCard = false;
 let lockBoard = false;
@@ -7,12 +7,13 @@ var restart;
 var moves = 18;
 
 function flipCard() {
-    moves = moves-1; 
-document.querySelector("div.moves").innerHTML = "Moves "+ moves;
+  moves = moves - 1;
+  document.querySelector("div.moves").innerHTML = "Moves " + moves;
+  if (moves < 0) document.getElementById("over").innerHTML = "GAME OVER!!!!";
   if (lockBoard) return;
   if (this === firstCard) return;
-
-  this.classList.add('flip');
+  
+  this.classList.add("flip");
 
   if (!hasFlippedCard) {
     //first card
@@ -54,14 +55,14 @@ function unflipCards() {
 }
 
 function resetBoard() {
-  hasFlippedCard =false;
+  hasFlippedCard = false;
   lockBoard = false;
   firstCard = null;
   secondCard = null;
 }
 
 (function shuffle() {
-  cards.forEach(card => {
+  cards.forEach((card) => {
     let randomPos = Math.floor(Math.random() * 12);
     card.style.order = randomPos;
   });
@@ -69,19 +70,6 @@ function resetBoard() {
 cards.forEach((card) => card.addEventListener("click", flipCard));
 
 function reset() {
-  
-     location.reload();
-        return false;
-}  
-
-function move18() {
-
-}
-
-function move16() {
-
-}
-
-function move14() {
-
+  location.reload();
+  return false;
 }
