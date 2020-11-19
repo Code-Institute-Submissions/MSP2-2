@@ -4,30 +4,51 @@ let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
 var restart;
-var moves = parseInt(document.querySelector("section.memory-game").getAttribute("data-grid-size"));
+var moves = parseInt(
+  document.querySelector("section.memory-game").getAttribute("data-grid-size")
+);
+
+function check_win() {
+  grid_size = parseInt(
+    document
+      .querySelector("section.memory-game")
+      .getAttribute("data-card-length")
+  );
+  fliped_cards = document.querySelectorAll("div.flip").length + 1;
+  if (fliped_cards == grid_size) {
+    return true;
+  }
+  return false;
+}
 
 function flipCard() {
-  moves = moves - 1;
-  document.querySelector("div.moves").innerHTML = "moves " + moves;
-  if (moves < 1) document.getElementById("over").innerHTML = "GAME OVER!!!!";
   if (lockBoard) return;
-  if (this === firstCard) return;
-  
-  this.classList.add("flip");
+  moves = moves - 1;
+  if (moves < 0) {
+    document.querySelector("div.moves").innerHTML = "moves " + 0;
+    document.getElementById("over").innerHTML =
+      "IT'S GAME OVER MAN, IT'S GAME OVER !!!!!!!";
+  } else {
+    document.querySelector("div.moves").innerHTML = "moves " + moves;
+    if (check_win()) document.getElementById("win").innerHTML = "YOU WON";
+    if (this === firstCard) return;
 
-  if (!hasFlippedCard) {
-    //first card
-    hasFlippedCard = true;
-    firstCard = this;
+    this.classList.add("flip");
 
-    return;
+    if (!hasFlippedCard) {
+      //first card
+      hasFlippedCard = true;
+      firstCard = this;
+
+      return;
+    }
+
+    // second click
+    hasFlippedCard = false;
+    secondCard = this;
+
+    checkForMatch();
   }
-
-  // second click
-  hasFlippedCard = false;
-  secondCard = this;
-
-  checkForMatch();
 }
 
 function checkForMatch() {
@@ -39,7 +60,7 @@ function checkForMatch() {
 function disableCards() {
   firstCard.removeEventListener("click", flipCard);
   secondCard.removeEventListener("click", flipCard);
-  
+
   resetBoard();
 }
 
