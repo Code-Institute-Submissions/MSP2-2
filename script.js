@@ -4,12 +4,12 @@ let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
 var restart;
-var moves = 18;
+var moves = parseInt(document.querySelector("section.memory-game").getAttribute("data-grid-size"));
 
 function flipCard() {
   moves = moves - 1;
-  document.querySelector("div.moves").innerHTML = "Moves " + moves;
-  if (moves < 0) document.getElementById("over").innerHTML = "GAME OVER!!!!";
+  document.querySelector("div.moves").innerHTML = "moves " + moves;
+  if (moves < 1) document.getElementById("over").innerHTML = "GAME OVER!!!!";
   if (lockBoard) return;
   if (this === firstCard) return;
   
@@ -39,7 +39,7 @@ function checkForMatch() {
 function disableCards() {
   firstCard.removeEventListener("click", flipCard);
   secondCard.removeEventListener("click", flipCard);
-
+  
   resetBoard();
 }
 
