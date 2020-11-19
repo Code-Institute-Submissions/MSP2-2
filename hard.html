@@ -7,88 +7,91 @@
 	<title>Memory Game</title>
 	<link rel="stylesheet" href="./style.css" />
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
-	 integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous" />
+		integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous" />
 </head>
 
 
 <body>
-	 <header class="title">  <h1>Aliens <br> Memory game</h1>  
+	<header class="title">
+		<h1>Aliens <br> Memory game</h1>
 
-		
+
 			<div class="scoreboard">
 				<div class="moves" value="move14">Moves 14</div>
 				<input type="button" onclick="reset()" value="reset" >
-           </div> 
-            <div class="buttons">
-           <a class="button-1" href="index.html">Alien</a>
-           <a class="button-2" href="medium.html">Aliens</a>
            </div>
-    
-		 </header>
+				<p id="over"></p>
+				<p id="win"></p>
+				<div class="buttons">
+					<a class="button-1" href="index.html">Alien</a>
+					<a class="button-2" href="medium.html">Aliens</a>
+				</div>
 
-		<section class="memory-game" data-grid-size="14">
-        
-			<div class="memory-card" data-framework="andrews">
-				<img class="front-face" src="img/andrews.jpg" alt="" />
+	</header>
+
+	<section class="memory-game" data-grid-size="14" data-card-length="12">
+
+		<div class="memory-card" data-framework="andrews">
+			<img class="front-face" src="img/andrews.jpg" alt="" />
+			<img class="back-face" src="img/egg.png" alt="" />
+      </div>
+
+			<div class="memory-card" data-framework="bishop">
+				<img class="front-face" src="img/bishop.jpg" alt="" />
 				<img class="back-face" src="img/egg.png" alt="" />
       </div>
 
-				<div class="memory-card" data-framework="bishop">
-					<img class="front-face" src="img/bishop.jpg" alt="" />
+				<div class="memory-card" data-framework="deno">
+					<img class="front-face" src="img/deno.jpg" alt="" />
 					<img class="back-face" src="img/egg.png" alt="" />
       </div>
 
-					<div class="memory-card" data-framework="deno">
-						<img class="front-face" src="img/deno.jpg" alt="" />
+					<div class="memory-card" data-framework="prisoners">
+						<img class="front-face" src="img/prisoners.jpg" alt="" />
 						<img class="back-face" src="img/egg.png" alt="" />
       </div>
 
-						<div class="memory-card" data-framework="prisoners">
-							<img class="front-face" src="img/prisoners.jpg" alt="" />
+						<div class="memory-card" data-framework="ripley3">
+							<img class="front-face" src="img/ripley3.jpg" alt="" />
 							<img class="back-face" src="img/egg.png" alt="" />
       </div>
 
-							<div class="memory-card" data-framework="ripley3">
-								<img class="front-face" src="img/ripley3.jpg" alt="" />
+							<div class="memory-card" data-framework="dillon">
+								<img class="front-face" src="img/dillon.jpg" alt="" />
 								<img class="back-face" src="img/egg.png" alt="" />
       </div>
 
-								<div class="memory-card" data-framework="dillon">
-									<img class="front-face" src="img/dillon.jpg" alt="" />
+								<div class="memory-card" data-framework="andrews">
+									<img class="front-face" src="img/andrews.jpg" alt="" />
 									<img class="back-face" src="img/egg.png" alt="" />
       </div>
 
-									<div class="memory-card" data-framework="andrews">
-										<img class="front-face" src="img/andrews.jpg" alt="" />
+									<div class="memory-card" data-framework="bishop">
+										<img class="front-face" src="img/bishop.jpg" alt="" />
 										<img class="back-face" src="img/egg.png" alt="" />
       </div>
 
-										<div class="memory-card" data-framework="bishop">
-											<img class="front-face" src="img/bishop.jpg" alt="" />
+										<div class="memory-card" data-framework="deno">
+											<img class="front-face" src="img/deno.jpg" alt="" />
 											<img class="back-face" src="img/egg.png" alt="" />
       </div>
 
-											<div class="memory-card" data-framework="deno">
-												<img class="front-face" src="img/deno.jpg" alt="" />
+											<div class="memory-card" data-framework="prisoners">
+												<img class="front-face" src="img/prisoners.jpg" alt="" />
 												<img class="back-face" src="img/egg.png" alt="" />
       </div>
 
-												<div class="memory-card" data-framework="prisoners">
-													<img class="front-face" src="img/prisoners.jpg" alt="" />
+												<div class="memory-card" data-framework="ripley3">
+													<img class="front-face" src="img/ripley3.jpg" alt="" />
 													<img class="back-face" src="img/egg.png" alt="" />
       </div>
 
-													<div class="memory-card" data-framework="ripley3">
-														<img class="front-face" src="img/ripley3.jpg" alt="" />
+													<div class="memory-card" data-framework="dillon">
+														<img class="front-face" src="img/dillon.jpg" alt="" />
 														<img class="back-face" src="img/egg.png" alt="" />
       </div>
-
-														<div class="memory-card" data-framework="dillon">
-															<img class="front-face" src="img/dillon.jpg" alt="" />
-															<img class="back-face" src="img/egg.png" alt="" />
-      </div>
-		</section>
-		<script src="./script.js"></script>
+	</section>
+	<script src="./script.js"></script>
 </body>
 
 </html>

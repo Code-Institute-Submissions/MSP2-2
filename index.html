@@ -1,100 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
 
-    <title>Memory Game</title>
-    <link rel="stylesheet" href="./style.css" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
-      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
-      crossorigin="anonymous"
-    />
-  </head>
+<head>
+	<meta charset="UTF-8" />
 
-  <body>
-    <header>
-      <h1>
-        Aliens <br />
+	<title>Memory Game</title>
+	<link rel="stylesheet" href="./style.css" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+		integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous" />
+</head>
+
+<body>
+	<header>
+		<h1>
+			Aliens <br />
         Memory game
       </h1>
 
-      <div class="scoreboard">
-        <div class="moves" value="move18">Moves 18</div>
-        <input type="button" onclick="reset()" value="reset" />
-      </div>
-      
-      <p id="over"></p>
-
-      <div class="buttons">
-        <a class="button-1" href="medium.html">Aliens</a>
-        <a class="button-2" href="hard.html">Alien 3</a>
-      </div>
-      
-    </header>
-
-    <section class="memory-game" data-grid-size="18">
-      <div class="memory-card" data-framework="alien">
-        <img class="front-face" src="img/alien.jpg" alt="" />
-        <img class="back-face" src="img/egg.png" alt="" />
+			<div class="scoreboard">
+				<div class="moves" value="move18">Moves 18</div>
+				<input type="button" onclick="reset()" value="reset" />
       </div>
 
-      <div class="memory-card" data-framework="alien">
-        <img class="front-face" src="img/alien.jpg" alt="" />
-        <img class="back-face" src="img/egg.png" alt="" />
+				<p id="over"></p>
+				<p id="win"></p>
+				<div class="buttons">
+					<a class="button-1" href="medium.html">Aliens</a>
+					<a class="button-2" href="hard.html">Alien 3</a>
+				</div>
+
+	</header>
+
+	<section class="memory-game" data-grid-size="18" data-card-length="12">
+		<div class="memory-card" data-framework="alien">
+			<img class="front-face" src="img/alien.jpg" alt="" />
+			<img class="back-face" src="img/egg.png" alt="" />
       </div>
 
-      <div class="memory-card" data-framework="ellen">
-        <img class="front-face" src="img/ellen.jpg" alt="" />
-        <img class="back-face" src="img/egg.png" alt="" />
+			<div class="memory-card" data-framework="alien">
+				<img class="front-face" src="img/alien.jpg" alt="" />
+				<img class="back-face" src="img/egg.png" alt="" />
       </div>
 
-      <div class="memory-card" data-framework="ellen">
-        <img class="front-face" src="img/ellen.jpg" alt="" />
-        <img class="back-face" src="img/egg.png" alt="" />
+				<div class="memory-card" data-framework="ellen">
+					<img class="front-face" src="img/ellen.jpg" alt="" />
+					<img class="back-face" src="img/egg.png" alt="" />
       </div>
 
-      <div class="memory-card" data-framework="face1">
-        <img class="front-face" src="img/face1.jpg" alt="" />
-        <img class="back-face" src="img/egg.png" alt="" />
+					<div class="memory-card" data-framework="ellen">
+						<img class="front-face" src="img/ellen.jpg" alt="" />
+						<img class="back-face" src="img/egg.png" alt="" />
       </div>
 
-      <div class="memory-card" data-framework="face1">
-        <img class="front-face" src="img/face1.jpg" alt="" />
-        <img class="back-face" src="img/egg.png" alt="" />
+						<div class="memory-card" data-framework="face1">
+							<img class="front-face" src="img/face1.jpg" alt="" />
+							<img class="back-face" src="img/egg.png" alt="" />
       </div>
 
-      <div class="memory-card" data-framework="jockey">
-        <img class="front-face" src="img/jockey.jpg" alt="" />
-        <img class="back-face" src="img/egg.png" alt="" />
+							<div class="memory-card" data-framework="face1">
+								<img class="front-face" src="img/face1.jpg" alt="" />
+								<img class="back-face" src="img/egg.png" alt="" />
       </div>
 
-      <div class="memory-card" data-framework="jockey">
-        <img class="front-face" src="img/jockey.jpg" alt="" />
-        <img class="back-face" src="img/egg.png" alt="" />
+								<div class="memory-card" data-framework="jockey">
+									<img class="front-face" src="img/jockey.jpg" alt="" />
+									<img class="back-face" src="img/egg.png" alt="" />
       </div>
 
-      <div class="memory-card" data-framework="ash">
-        <img class="front-face" src="img/ash.jpg" alt="" />
-        <img class="back-face" src="img/egg.png" alt="" />
+									<div class="memory-card" data-framework="jockey">
+										<img class="front-face" src="img/jockey.jpg" alt="" />
+										<img class="back-face" src="img/egg.png" alt="" />
       </div>
 
-      <div class="memory-card" data-framework="ash">
-        <img class="front-face" src="img/ash.jpg" alt="" />
-        <img class="back-face" src="img/egg.png" alt="" />
+										<div class="memory-card" data-framework="ash">
+											<img class="front-face" src="img/ash.jpg" alt="" />
+											<img class="back-face" src="img/egg.png" alt="" />
       </div>
 
-      <div class="memory-card" data-framework="chest1">
-        <img class="front-face" src="img/chest1.jpg" alt="" />
-        <img class="back-face" src="img/egg.png" alt="" />
+											<div class="memory-card" data-framework="ash">
+												<img class="front-face" src="img/ash.jpg" alt="" />
+												<img class="back-face" src="img/egg.png" alt="" />
       </div>
 
-      <div class="memory-card" data-framework="chest1">
-        <img class="front-face" src="img/chest1.jpg" alt="" />
-        <img class="back-face" src="img/egg.png" alt="" />
+												<div class="memory-card" data-framework="chest1">
+													<img class="front-face" src="img/chest1.jpg" alt="" />
+													<img class="back-face" src="img/egg.png" alt="" />
       </div>
-    </section>
-  </body>
-  <script src="./script.js"></script>
+
+													<div class="memory-card" data-framework="chest1">
+														<img class="front-face" src="img/chest1.jpg" alt="" />
+														<img class="back-face" src="img/egg.png" alt="" />
+      </div>
+	</section>
+</body>
+<script src="./script.js"></script>
+
 </html>

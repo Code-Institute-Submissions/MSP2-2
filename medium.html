@@ -14,82 +14,84 @@
 <body>
 	<header class="title">
 		<h1>Aliens <br> Memory game</h1>
-	
 
 
-	<div class="scoreboard">
-		<div class="moves" value="move16">Moves 16</div>
-		<input type="button" onclick="reset()" value="reset" >
+
+			<div class="scoreboard">
+				<div class="moves" value="move16">Moves 16</div>
+				<input type="button" onclick="reset()" value="reset" >
            </div>
-		<div class="buttons">
-			<a class="button-1" href="index.html">Alien</a>
-			<a class="button-2" href="hard.html">Alien 3</a>
-		</div>
-</header>
+				<p id="over"></p>
+				<p id="win"></p>
+				<div class="buttons">
+					<a class="button-1" href="index.html">Alien</a>
+					<a class="button-2" href="hard.html">Alien 3</a>
+				</div>
+	</header>
 
-		<section class="memory-game" data-grid-size="16">
+	<section class="memory-game" data-grid-size="16" data-card-length="12">
 
-			<div class="memory-card" data-framework="hugger2">
-				<img class="front-face" src="img/hugger2.jpg" alt="" />
+		<div class="memory-card" data-framework="hugger2">
+			<img class="front-face" src="img/hugger2.jpg" alt="" />
+			<img class="back-face" src="img/egg.png" alt="" />
+      </div>
+
+			<div class="memory-card" data-framework="knife">
+				<img class="front-face" src="img/knife.jpg" alt="" />
 				<img class="back-face" src="img/egg.png" alt="" />
       </div>
 
-				<div class="memory-card" data-framework="knife">
-					<img class="front-face" src="img/knife.jpg" alt="" />
+				<div class="memory-card" data-framework="newt">
+					<img class="front-face" src="img/newt.jpg" alt="" />
 					<img class="back-face" src="img/egg.png" alt="" />
       </div>
 
-					<div class="memory-card" data-framework="newt">
-						<img class="front-face" src="img/newt.jpg" alt="" />
+					<div class="memory-card" data-framework="queen">
+						<img class="front-face" src="img/queen.jpg" alt="" />
 						<img class="back-face" src="img/egg.png" alt="" />
       </div>
 
-						<div class="memory-card" data-framework="queen">
-							<img class="front-face" src="img/queen.jpg" alt="" />
+						<div class="memory-card" data-framework="powerloader">
+							<img class="front-face" src="img/powerloader.jpg" alt="" />
 							<img class="back-face" src="img/egg.png" alt="" />
       </div>
 
-							<div class="memory-card" data-framework="powerloader">
-								<img class="front-face" src="img/powerloader.jpg" alt="" />
+							<div class="memory-card" data-framework="ripley2">
+								<img class="front-face" src="img/ripley2.jpg" alt="" />
 								<img class="back-face" src="img/egg.png" alt="" />
       </div>
 
-								<div class="memory-card" data-framework="ripley2">
-									<img class="front-face" src="img/ripley2.jpg" alt="" />
+								<div class="memory-card" data-framework="hugger2">
+									<img class="front-face" src="img/hugger2.jpg" alt="" />
 									<img class="back-face" src="img/egg.png" alt="" />
       </div>
 
-									<div class="memory-card" data-framework="hugger2">
-										<img class="front-face" src="img/hugger2.jpg" alt="" />
+									<div class="memory-card" data-framework="knife">
+										<img class="front-face" src="img/knife.jpg" alt="" />
 										<img class="back-face" src="img/egg.png" alt="" />
       </div>
 
-										<div class="memory-card" data-framework="knife">
-											<img class="front-face" src="img/knife.jpg" alt="" />
+										<div class="memory-card" data-framework="newt">
+											<img class="front-face" src="img/newt.jpg" alt="" />
 											<img class="back-face" src="img/egg.png" alt="" />
       </div>
 
-											<div class="memory-card" data-framework="newt">
-												<img class="front-face" src="img/newt.jpg" alt="" />
+											<div class="memory-card" data-framework="queen">
+												<img class="front-face" src="img/queen.jpg" alt="" />
 												<img class="back-face" src="img/egg.png" alt="" />
       </div>
 
-												<div class="memory-card" data-framework="queen">
-													<img class="front-face" src="img/queen.jpg" alt="" />
+												<div class="memory-card" data-framework="powerloader">
+													<img class="front-face" src="img/powerloader.jpg" alt="" />
 													<img class="back-face" src="img/egg.png" alt="" />
       </div>
 
-													<div class="memory-card" data-framework="powerloader">
-														<img class="front-face" src="img/powerloader.jpg" alt="" />
+													<div class="memory-card" data-framework="ripley2">
+														<img class="front-face" src="img/ripley2.jpg" alt="" />
 														<img class="back-face" src="img/egg.png" alt="" />
       </div>
-
-														<div class="memory-card" data-framework="ripley2">
-															<img class="front-face" src="img/ripley2.jpg" alt="" />
-															<img class="back-face" src="img/egg.png" alt="" />
-      </div>
-		</section>
-		<script src="./script.js"></script>
+	</section>
+	<script src="./script.js"></script>
 </body>
 
 </html>
