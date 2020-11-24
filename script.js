@@ -30,7 +30,7 @@ function flipCard() {
       "IT'S GAME OVER MAN, IT'S GAME OVER !!!!!!!";
   } else {
     document.querySelector("div.moves").innerHTML = "moves " + moves;
-    if (check_win()) document.getElementById("win").innerHTML = "YOU WON";
+    if (check_win()) document.getElementById("win").innerHTML = "YOU WIN";
     if (this === firstCard) return;
 
     this.classList.add("flip");
