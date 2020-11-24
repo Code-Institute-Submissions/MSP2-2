@@ -107,11 +107,11 @@ transition: transform .2s;
     transform: rotateY(180deg); 
 }
 
-@media screen and (min-width: 375px) {
+/*@media screen and (min-width: 375px) {
    .memory-game {
        column-count: 1;
        height: 900px;
        width: 900px;
        
    }
-}
+}*/
