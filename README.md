@@ -48,7 +48,7 @@ Check my CSS code with wc3 validator and found no errors.
 
 <h5>W3C HTML validator</h5> 
 
-Checked HTML code with wc3 validator anf ound 2 errors and 1 warning which I will address.
+Checked HTML code with wc3 validator and found 1 errors and 1 warning which I will address.
 
 <h2>DEPLOYMENT</h2>
 I deployed my project with github.
